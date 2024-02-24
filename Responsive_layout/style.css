@@ -5,9 +5,81 @@
     /* justify-content: flex-end; */
     align-items: flex-end;
     flex-direction: column-reverse;
+    flex-wrap: wrap;
 }
 .box{
     height: 50px;
     width: 50px;
     border: 2px solid red;
+}
+/* grid-calender */
+.calender-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 15px
+}
+.date, .day{
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.day{
+    background-color: rgb(201, 201, 201);
+    height: 30px;
+}
+
+/* food cart */
+.foodCart-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+.foodCart{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+.foodCart>img{
+    width: 100%;
+}
+
+/* responsive by media query */
+@media screen and (max-width: 576px) {
+    .foodCart-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* grid style */
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.grid-box-1{
+    display: grid;
+}
+.grid-box{
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.grid-box-container{
+    display: grid;
+    grid-template-columns: ;
+    gap: 10px
+}
+.grid-box-container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+/* layout */
+.img-width{
+    width: 100%;
 }
