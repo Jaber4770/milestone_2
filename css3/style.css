@@ -1,0 +1,27 @@
+p{
+    width: 200px;
+    overflow: hidden;
+    border: 2px solid steelblue;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.box-container{
+    border: 2px solid red;
+    padding: 5px;
+    background-color: aqua;
+}
+
+.box{
+    border: 1px solid green;
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+}
+.box{
+    transition: transform 1s;
+}
+.box-container:hover .box{
+    transform: scale(.50) rotate(360deg)
+    translateX(150px) translateY(-100px);
+}
